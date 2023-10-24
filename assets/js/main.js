@@ -2,7 +2,7 @@
 
 /*--
     Header Top High
-    ¸ü¶àÏÂÔØ£ºhttp://www.bootstrapmb.com
+    ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø£ï¿½http://www.bootstrapmb.com
 -----------------------------------*/
 const headerTopHigh = (selector) => {
     const headerTop = document.querySelector(selector)
@@ -28,15 +28,17 @@ const headerSticky = (selector) => {
 
         console.log(headerMenu)
 
+
+
         window.addEventListener("scroll", () => {
             const currentScroll = window.pageYOffset
 
             if (currentScroll > 150) {
                 header.classList.add("is-sticky")
-                headerLogo.src = "./assets/images/logo.svg"
+                headerLogo && (headerLogo.src = "./assets/images/logo.svg")
             } else {
                 header.classList.remove("is-sticky")
-                headerLogo.src = "./assets/images/logo-white.svg"
+                headerLogo && (headerLogo.src = "./assets/images/logo-white.svg")
             }
         })
     }
@@ -464,9 +466,9 @@ const productMarker = (selector) => {
                 }
             })
         })
-        ;["resize", "DOMContentLoaded"].forEach((el) => {
-            window.addEventListener(el, contentPosition)
-        })
+            ;["resize", "DOMContentLoaded"].forEach((el) => {
+                window.addEventListener(el, contentPosition)
+            })
     }
 }
 
@@ -521,26 +523,26 @@ const countdown = (selector) => {
             days.innerText = result
                 ? "00"
                 : Math.floor(distance / day) > 9
-                ? Math.floor(distance / day)
-                : "0" + Math.floor(distance / day)
+                    ? Math.floor(distance / day)
+                    : "0" + Math.floor(distance / day)
 
             hours.innerText = result
                 ? "00"
                 : Math.floor((distance % day) / hour) > 9
-                ? Math.floor((distance % day) / hour)
-                : "0" + Math.floor((distance % day) / hour)
+                    ? Math.floor((distance % day) / hour)
+                    : "0" + Math.floor((distance % day) / hour)
 
             minutes.innerText = result
                 ? "00"
                 : Math.floor((distance % hour) / minute) > 9
-                ? Math.floor((distance % hour) / minute)
-                : "0" + Math.floor((distance % hour) / minute)
+                    ? Math.floor((distance % hour) / minute)
+                    : "0" + Math.floor((distance % hour) / minute)
 
             seconds.innerText = result
                 ? "00"
                 : Math.floor((distance % minute) / second) > 9
-                ? Math.floor((distance % minute) / second)
-                : "0" + Math.floor((distance % minute) / second)
+                    ? Math.floor((distance % minute) / second)
+                    : "0" + Math.floor((distance % minute) / second)
 
             if (result) {
                 clearInterval(x)
@@ -609,9 +611,8 @@ const mousemoveParallax = (selector) => {
 
                 const child = item.children[0]
 
-                child.style.transform = `translate3d(${
-                    (_mouseX - _w) * (parallaxValue / 300)
-                }px, -3.3px, 0px)`
+                child.style.transform = `translate3d(${(_mouseX - _w) * (parallaxValue / 300)
+                    }px, -3.3px, 0px)`
             })
         }
         // Add event listener
@@ -1014,7 +1015,7 @@ const ProductSingle = new Swiper(".product-single-slide .swiper", {
     Related Product
 -----------------------------------*/
 var swiper = new Swiper(".related-product-active .swiper", {
-    loop: true,
+    loop: false,
     // Pagination
     pagination: {
         el: ".related-product-active .swiper-pagination",
@@ -1291,6 +1292,7 @@ const hideScrollElement = (element) => {
 }
 
 const handleScrollAnimation = () => {
+    // const scrollElements = document.querySelectorAll(".js-scroll")
     scrollElements.forEach((el) => {
         if (elementInView(el, 1.25)) {
             displayScrollElement(el)
@@ -1300,11 +1302,11 @@ const handleScrollAnimation = () => {
     })
 }
 
-;["scroll", "load"].forEach((el) => {
-    window.addEventListener(el, () => {
-        handleScrollAnimation()
+    ;["scroll", "load"].forEach((el) => {
+        window.addEventListener(el, () => {
+            handleScrollAnimation()
+        })
     })
-})
 
 /*--
     Automatic Pop-Up
@@ -1321,14 +1323,14 @@ const AutoPopup = (selector) => {
             popupOverlay.classList.add("open")
             popupOverlay.classList.remove("close")
         }, 1000)
-        ;[popupClose, popupOverlay].forEach((el) => {
-            el.addEventListener("click", () => {
-                popup.classList.remove("open")
-                popup.classList.add("close")
-                popupOverlay.classList.remove("open")
-                popupOverlay.classList.add("close")
+            ;[popupClose, popupOverlay].forEach((el) => {
+                el.addEventListener("click", () => {
+                    popup.classList.remove("open")
+                    popup.classList.add("close")
+                    popupOverlay.classList.remove("open")
+                    popupOverlay.classList.add("close")
+                })
             })
-        })
     }
 }
 

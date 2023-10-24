@@ -1,0 +1,35 @@
+[
+    {
+        "id": "pb1001",
+        "title": "PERFUME BALM CHAMO", 
+        "subtitle": "Thick chamomile | Soft wood grain | Musk",
+        "image": "assets/images/commodity/1.jpg",
+        "link": "https://shope.ee/2L77oj93pL",
+        "price": "₩46,500",
+        "preview": [
+            "assets/images/commodity/1.jpg"
+        ]
+    },
+    {
+        "id": "pb2001",
+        "title": "PERFUME BALM BERGA SANDAL", 
+        "subtitle": "Bergamot in the Mediterranean | Bittersweet green tangerine | Sandalwood",
+        "image": "assets/images/commodity/2.jpg",
+        "link": "https://shope.ee/2L77oj93pL",
+        "price": "₩46,500",
+        "preview": [
+            "assets/images/commodity/2.jpg"
+        ]
+    },
+    {
+        "id": "pb3001",
+        "title": "PERFUME BALM LALE", 
+        "subtitle": "Green apple with dew | White tulip | Sandalwood",
+        "image": "assets/images/commodity/3.jpg",
+        "link": "https://shope.ee/2L77oj93pL",
+        "price": "₩46,500",
+        "preview": [
+            "assets/images/commodity/3.jpg"
+        ]
+    }
+]
