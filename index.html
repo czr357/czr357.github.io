@@ -1372,33 +1372,13 @@
             <div class="single-product__thumbnail--meta-4">
                 <button
                 href="#"
-                data-bs-tooltip="tooltip"
-                data-bs-placement="top"
-                data-bs-title="Quickview"
-                data-bs-custom-class="p-meta-tooltip"
-                data-bs-toggle="modal"
-                data-bs-target="#quickView"
+                onclick="dk(this)"
+                data-id="{{= $value.id}}"
                 >
                 <i class="lastudioicon-eye"></i>
                 </button>
                 <a
-                href="#"
-                data-bs-tooltip="tooltip"
-                data-bs-placement="top"
-                data-bs-title="Add to compare"
-                data-bs-custom-class="p-meta-tooltip"
-                ><i class="lastudioicon-compare"></i
-                ></a>
-                <a
-                href="#"
-                data-bs-tooltip="tooltip"
-                data-bs-placement="top"
-                data-bs-title="Add to wishlist"
-                data-bs-custom-class="p-meta-tooltip"
-                ><i class="lastudioicon-heart-1"></i
-                ></a>
-                <a
-                href="#"
+                href="{{= $value.link}}"
                 data-bs-tooltip="tooltip"
                 data-bs-placement="top"
                 data-bs-title="Add to cart"
