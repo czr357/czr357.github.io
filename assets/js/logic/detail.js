@@ -28,9 +28,15 @@ $.ajax({
         if (detail) {
             // console.log('detail', detail)
             $('.product-single-section .container-fluid').html($("#cmd_detail").tmpl(detail))
+            $('.product-single-tab-description-item').html(detail.desc)
+            $('.table-responsive').html($("#cmd_attr").tmpl(detail))
+            $('.product-single-tab-image__image').html($('<img>').attr('src', detail.image).attr('alt', 'Product'))
         }
 
-        $('.related-product-active .swiper-wrapper').html($("#related-list").tmpl({ dataList: data }))
+        const relatedList = data.filter(function (item) {
+            return item.id != id
+        })
+        $('.related-product-active .swiper-wrapper').html($("#related-list").tmpl({ dataList: relatedList }))
 
     },
     error: function (xhr, status, error) { // 失败回调函数

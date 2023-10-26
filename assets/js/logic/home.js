@@ -1,6 +1,8 @@
 "use strict"
 
 var CMD_LIST = []
+var CMD_QUICKVIEW = null
+
 
 $.ajax({
     url: 'assets/commoditys.json', // json文件的路径
@@ -35,6 +37,19 @@ function dk(e) {
     const id = $(e).attr('data-id')
     const itemData = getItemDetailById(id)
     console.log(itemData)
+
+    $("#quickView").html($("#tmpl-item-popup").tmpl(itemData))
+    if (CMD_QUICKVIEW) {
+        CMD_QUICKVIEW.destroy()
+        CMD_QUICKVIEW = null
+    }
+    CMD_QUICKVIEW = new Swiper(".quick-view-product-slide .swiper", {
+        spaceBetween: 0,
+        navigation: {
+            nextEl: ".quick-view-product-slide .swiper-button-next",
+            prevEl: ".quick-view-product-slide .swiper-button-prev",
+        },
+    })
 
     let m = document.getElementById("quickView");
     var myModal = new bootstrap.Modal(m, { keyboard: false });
