@@ -631,7 +631,7 @@ var swiper = new Swiper(".instagram-3-active .swiper", {
     centeredSlides: true,
     slidesPerView: 1,
 
-    loop: true,
+    loop: false,
     // Navigation arrows
     navigation: {
         nextEl: ".instagram-3-active .swiper-button-next",

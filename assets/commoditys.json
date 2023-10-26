@@ -1,35 +1,38 @@
 [
     {
         "id": "pb1001",
-        "title": "PERFUME BALM CHAMO", 
-        "subtitle": "Thick chamomile | Soft wood grain | Musk",
-        "image": "assets/images/commodity/1.jpg",
+        "title": "PERFUME BALM #FOREST THOUGHT", 
+        "subtitle": "Daisy | Joyful Clary Sage | Water | Cyperus | Musk | Woody Notes | Amber",
+        "image": "assets/images/perfume-balm/commodity/green.png",
         "link": "https://shope.ee/2L77oj93pL",
         "price": "₩46,500",
         "preview": [
-            "assets/images/commodity/1.jpg"
+            "assets/images/perfume-balm/commodity/green.png",
+            "assets/images/perfume-balm/commodity/green2.png"
         ]
     },
     {
         "id": "pb2001",
-        "title": "PERFUME BALM BERGA SANDAL", 
-        "subtitle": "Bergamot in the Mediterranean | Bittersweet green tangerine | Sandalwood",
-        "image": "assets/images/commodity/2.jpg",
+        "title": "PERFUME BALM #EASY SUNDAY", 
+        "subtitle": "Citrusy Lemon | Lime | Cardamom | Cedar | Cucumber | Sandalwood | Amyris Blossom",
+        "image": "assets/images/perfume-balm/commodity/yellow.png",
         "link": "https://shope.ee/2L77oj93pL",
         "price": "₩46,500",
         "preview": [
-            "assets/images/commodity/2.jpg"
+            "assets/images/perfume-balm/commodity/yellow.png",
+            "assets/images/perfume-balm/commodity/yellow2.png"
         ]
     },
     {
         "id": "pb3001",
-        "title": "PERFUME BALM LALE", 
-        "subtitle": "Green apple with dew | White tulip | Sandalwood",
-        "image": "assets/images/commodity/3.jpg",
+        "title": "PERFUME BALM #BLANCHE", 
+        "subtitle": "Nutmeg | Tea | Aldehyde | Pepper | Iris | Guaiac Wood | Musk | Vetiver | Cedar",
+        "image": "assets/images/perfume-balm/commodity/white.png",
         "link": "https://shope.ee/2L77oj93pL",
         "price": "₩46,500",
         "preview": [
-            "assets/images/commodity/3.jpg"
+            "assets/images/perfume-balm/commodity/white.png",
+            "assets/images/perfume-balm/commodity/white2.png"
         ]
     }
 ]

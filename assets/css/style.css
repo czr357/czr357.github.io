@@ -79,6 +79,14 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "noto sans";
+  src: url("../fonts/NotoSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Common Style */
 *,
 *::after,
@@ -92,7 +100,7 @@ body {
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "noto sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -107,7 +115,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "noto sans", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
@@ -273,7 +281,7 @@ hr {
 }
 .section-title p {
   font-size: 20px;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .section-title p {
@@ -311,7 +319,7 @@ hr {
 }
 .section-title-2 p {
   font-size: 20px;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .section-title-2 p {
@@ -471,7 +479,7 @@ hr {
 }
 .section-title-7__title {
   font-size: 64px;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-style: italic;
   font-weight: 700;
   line-height: 0.8;
@@ -489,7 +497,7 @@ hr {
 }
 .section-title-7 p {
   font-size: 20px;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .section-title-7 p {
@@ -2961,7 +2969,7 @@ hr {
 .home-1-slider-content__title {
   font-size: 100px;
   font-weight: 700;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   color: #ffffff;
   line-height: 1;
 }
@@ -3156,7 +3164,7 @@ hr {
 .home-2-slider-content__title {
   font-size: 100px;
   font-weight: 700;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   color: #ffffff;
   line-height: 1;
 }
@@ -3534,7 +3542,7 @@ hr {
   }
 }
 .home-3-slider-content-style-1__description {
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   color: #ffffff;
   line-height: 1.6;
   font-weight: 400;
@@ -4542,7 +4550,7 @@ hr {
 .home-5-slider-content-style-1__title {
   font-size: 150px;
   font-weight: 700;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   color: #ffffff;
   line-height: 1;
   margin-top: 2px;
@@ -4651,7 +4659,7 @@ hr {
 .home-5-slider-content-style-2__title {
   font-size: 130px;
   font-weight: 700;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   color: #ffffff;
   line-height: 1;
   margin-top: 2px;
@@ -5918,7 +5926,7 @@ hr {
 }
 .home-8-slider-content-style-1__title {
   color: #ffffff;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 120px;
   font-weight: 700;
   font-style: italic;
@@ -6129,7 +6137,7 @@ hr {
 }
 .single-features-2__body--description {
   color: #494949;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 20px;
   line-height: 1.4;
   margin-top: 8px;
@@ -6474,7 +6482,7 @@ hr {
   padding-top: 20px;
 }
 .categories-item-2__title {
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 34px;
   font-weight: 700;
   color: #171717;
@@ -8175,7 +8183,7 @@ hr {
 .product-marker-content-2__description {
   font-size: 20px;
   font-weight: 400;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   margin-top: 15px;
   margin-bottom: 30px;
   color: #707070;
@@ -8970,7 +8978,7 @@ hr {
 }
 .instagram-title__description {
   color: #707070;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 20px;
   line-height: 1.6;
 }
@@ -9694,7 +9702,7 @@ hr {
 }
 .trending-item-3__title {
   color: #ffffff;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 42px;
   font-weight: 700;
   font-style: italic;
@@ -9807,7 +9815,7 @@ hr {
   }
 }
 .about-content__description {
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 20px;
   font-weight: 400;
   line-height: 2;
@@ -9936,7 +9944,7 @@ hr {
   }
 }
 .about-content-2__title {
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 72px;
   font-weight: 700;
   font-style: italic;
@@ -10878,7 +10886,7 @@ hr {
 }
 .testimonial-item__description {
   color: #171717;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 36px;
   font-weight: 500;
   font-style: italic;
@@ -10936,7 +10944,7 @@ hr {
   border-radius: 50%;
 }
 .testimonial-item-2__comment {
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 20px;
   width: 100%;
   padding: 0 5px 20px 5px;
@@ -11036,7 +11044,7 @@ hr {
   border-radius: 50%;
 }
 .testimonial-item-3__comment {
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 20px;
   position: relative;
   line-height: 2;
@@ -11357,7 +11365,7 @@ hr {
 }
 .newsletter-content__title {
   color: #ffffff;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 64px;
   font-weight: 700;
   font-style: italic;
@@ -11375,7 +11383,7 @@ hr {
 }
 .newsletter-content__description {
   color: #ffffff;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 20px;
   line-height: 1.4;
   width: 100%;
@@ -11499,7 +11507,7 @@ hr {
 .newsletter-wrapper-3 p {
   font-size: 20px;
   font-weight: 400;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   line-height: 1.5;
   margin: 10px 0 20px;
 }
@@ -18040,7 +18048,7 @@ hr {
 }
 .blog-widget-author-box__content p {
   color: #494949;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   font-size: 16px;
   font-weight: 400;
   font-style: italic;
@@ -18367,7 +18375,7 @@ hr {
 }
 .blog-single__content blockquote p {
   font-size: 28px;
-  font-family: "Garamond Premiere Pro";
+  font-family: "noto sans";
   line-height: 1.5;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
