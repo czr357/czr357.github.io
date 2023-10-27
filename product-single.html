@@ -43,9 +43,6 @@
       .footer-2-col-2 {
         width: 100% !important;
       }
-      .footer-link-3 {
-        justify-content: center !important;
-      }
       .single-product__info--tags {
         font-size: 14px;
         color: #171717;
@@ -70,6 +67,12 @@
       .product-single-thumb .swiper-slide {
         transition: opacity 0.3s cubic-bezier(0.22, 0.61, 0.36, 1),
           border-color 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      .footer-link-3 > *.footer-link__wrapper {
+        width: initial;
+      }
+      .footer-link-3 > *.footer-link__wrapper + .footer-link__wrapper {
+        margin-left: 50px;
       }
     </style>
   </head>
@@ -841,7 +844,7 @@
           </div>
           <div class="footer-2-col-2">
             <!-- Footer Link Start -->
-            <div class="footer-link-3">
+            <div class="footer-link-3 justify-content-center">
               <div class="footer-link__wrapper">
                 <h4 class="footer-title-3">Company links</h4>
 
