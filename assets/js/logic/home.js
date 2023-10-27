@@ -3,7 +3,6 @@
 var CMD_LIST = []
 var CMD_QUICKVIEW = null
 
-
 $.ajax({
     url: 'assets/commoditys.json', // json文件的路径
     type: 'GET', // 请求的方式

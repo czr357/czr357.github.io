@@ -1,3 +1,8 @@
+"use strict"
+
+var CMD_LIST = []
+var CMD_QUICKVIEW = null
+
 function getQueryString(name) {
     var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
     var r = window.location.search.substr(1).match(reg);
@@ -36,6 +41,7 @@ $.ajax({
         const relatedList = data.filter(function (item) {
             return item.id != id
         })
+        CMD_LIST = relatedList
         $('.related-product-active .swiper-wrapper').html($("#related-list").tmpl({ dataList: relatedList }))
 
     },
@@ -43,3 +49,39 @@ $.ajax({
         console.error(xhr, status, error);
     }
 });
+
+
+function dk(e) {
+    const id = $(e).attr('data-id')
+    const itemData = getItemDetailById(id)
+    console.log(itemData)
+
+    $("#quickView").html($("#tmpl-item-popup").tmpl(itemData))
+    if (CMD_QUICKVIEW) {
+        CMD_QUICKVIEW.destroy()
+        CMD_QUICKVIEW = null
+    }
+    CMD_QUICKVIEW = new Swiper(".quick-view-product-slide .swiper", {
+        spaceBetween: 0,
+        navigation: {
+            nextEl: ".quick-view-product-slide .swiper-button-next",
+            prevEl: ".quick-view-product-slide .swiper-button-prev",
+        },
+    })
+
+    let m = document.getElementById("quickView");
+    var myModal = new bootstrap.Modal(m, { keyboard: false });
+    myModal.show();
+    // console.log(myModal)
+}
+
+function getItemDetailById(id) {
+    if (!id) return null
+    const dataList = CMD_LIST
+    for (let i = 0; i < dataList.length; i++) {
+        const item = dataList[i];
+        if (item.id === id) {
+            return item
+        }
+    }
+}
