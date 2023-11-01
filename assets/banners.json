@@ -2,15 +2,18 @@
     {
         "image": "assets/images/perfume-balm/banner/banner_3001.png",
         "link": "https://shope.ee/2L77oj93pL",
+        "title": "FOREST THOUGHT",
         "color": "#7BBA37"
     },
     {
         "image": "assets/images/perfume-balm/banner/banner_2001.png",
         "link": "https://shope.ee/2L77oj93pL",
+        "title": "EASE SUNDAY",
         "color": "#FFC000"
     },
     {
         "image": "assets/images/perfume-balm/banner/banner_1001.png",
-        "link": "https://shope.ee/2L77oj93pL"
+        "link": "https://shope.ee/2L77oj93pL",
+        "title": "BLANCHE"
     }
 ]
