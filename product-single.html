@@ -68,11 +68,11 @@
         transition: opacity 0.3s cubic-bezier(0.22, 0.61, 0.36, 1),
           border-color 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
       }
-      .footer-link-3 > *.footer-link__wrapper {
-        width: initial;
+      .footer-title-3 {
+        text-align: center;
       }
-      .footer-link-3 > *.footer-link__wrapper + .footer-link__wrapper {
-        margin-left: 50px;
+      .footer-link-3__list {
+        text-align: center;
       }
       .section-title-4__title {
         letter-spacing: 0;
@@ -525,7 +525,6 @@
               ></a>
               <div class="mega-menu">
                 <div class="mega-menu-col">
-                  <h5 class="mega-menu-title">Shop Pages</h5>
                   <ul class="">
                     <li><a href="#">TikTok Shop</a></li>
                     <li><a href="#">Shopee Shop</a></li>
@@ -544,7 +543,6 @@
               ></a>
               <div class="mega-menu">
                 <div class="mega-menu-col">
-                  <h5 class="mega-menu-title">Collection 2023</h5>
                   <ul class="">
                     <li><a href="#">Perfume Balm</a></li>
                   </ul>
@@ -847,15 +845,11 @@
             <!-- Footer Link Start -->
             <div class="footer-link-3 justify-content-center">
               <div class="footer-link__wrapper">
-                <h4 class="footer-title-3">Company links</h4>
-
+                <h4 class="footer-title-3">Shop Pages</h4>
                 <ul class="footer-link-3__list">
-                  <li><a href="about.html">About us</a></li>
-                  <li><a href="shop-fullwidth.html">Shop</a></li>
-                  <li><a href="term-of-use.html">Help Center</a></li>
-                  <li>
-                    <a href="term-of-use.html">Policy & Privacy</a>
-                  </li>
+                  <li><span>TikTok Shop</span></li>
+                  <li><span>Shopee Shop</span></li>
+                  <li><span>Lazada Shop</span></li>
                 </ul>
               </div>
               <div class="footer-link__wrapper">
@@ -866,10 +860,10 @@
                     <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
                   </li>
                   <li>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <span>info@example.com</span>
                   </li>
                   <li>
-                    <a href="">(626)997-4298</a>
+                    <span>(626)997-4298</span>
                   </li>
                 </ul>
               </div>
@@ -970,14 +964,14 @@
                 <div class="product-single-content__meta--item">
                   <div class="label">Categories:</div>
                   <div class="content">
-                    <a href="#">{{= categories}}</a>
+                    {{= categories}}
                   </div>
                 </div>
                 {{each(j, attrObj) attr}}
                 <div class="product-single-content__meta--item">
                   <div class="label">${attrObj.k}:</div>
                   <div class="content">
-                    <a href="#">${attrObj.v}</a>
+                    ${attrObj.v}
                   </div>
                 </div>
                 {{/each}}
@@ -1119,21 +1113,22 @@
                   <div class="product-single-content__meta">
                     <div class="product-single-content__meta--item">
                       <div class="label">SKU:</div>
-                      <div class="content">REF. HT-5732</div>
+                      <div class="content">{{= sku}}</div>
                     </div>
                     <div class="product-single-content__meta--item">
                       <div class="label">Categories:</div>
                       <div class="content">
-                        <a href="#">Fashion</a>
-                        <a href="#">Women</a>
+                        {{= categories}}
                       </div>
                     </div>
+                    {{each(j, attrObj) attr}}
                     <div class="product-single-content__meta--item">
-                      <div class="label">Tag:</div>
+                      <div class="label">${attrObj.k}:</div>
                       <div class="content">
-                        <a href="#">Teen</a>
+                        ${attrObj.v}
                       </div>
                     </div>
+                    {{/each}}
                   </div>
                 </div>
                 <!-- Product Single Content End -->
