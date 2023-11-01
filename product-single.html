@@ -74,6 +74,9 @@
       .footer-link-3 > *.footer-link__wrapper + .footer-link__wrapper {
         margin-left: 50px;
       }
+      .section-title-4__title {
+        letter-spacing: 0;
+      }
     </style>
   </head>
 
@@ -117,7 +120,6 @@
                         class="mega-menu shop mega-menu-width d-flex flex-wrap"
                       >
                         <div class="mega-menu-col">
-                          <h5 class="mega-menu-title">Shop Pages</h5>
                           <ul class="">
                             <li><a href="#">TikTok Shop</a></li>
                             <li><a href="#">Shopee Shop</a></li>
@@ -136,7 +138,6 @@
                         class="mega-menu mega-menu--wrapper d-flex flex-wrap"
                       >
                         <div class="mega-menu-col">
-                          <h5 class="mega-menu-title">Collection 2023</h5>
                           <ul class="">
                             <li><a href="#">Perfume Balm</a></li>
                           </ul>
@@ -964,36 +965,24 @@
               <div class="product-single-content__meta">
                 <div class="product-single-content__meta--item">
                   <div class="label">SKU:</div>
-                  <div class="content">REF. HT-5732</div>
+                  <div class="content">{{= sku}}</div>
                 </div>
                 <div class="product-single-content__meta--item">
                   <div class="label">Categories:</div>
                   <div class="content">
-                    <a href="#">Fashion</a>
-                    <a href="#">Women</a>
+                    <a href="#">{{= categories}}</a>
                   </div>
                 </div>
+                {{each(j, attrObj) attr}}
                 <div class="product-single-content__meta--item">
-                  <div class="label">Tag:</div>
+                  <div class="label">${attrObj.k}:</div>
                   <div class="content">
-                    <a href="#">Teen</a>
+                    <a href="#">${attrObj.v}</a>
                   </div>
                 </div>
+                {{/each}}
               </div>
-              <div class="product-single-content__social">
-                <div class="label">Share</div>
-                <ul class="socail-icon">
-                  <li>
-                    <a href="#"><i class="lastudioicon-b-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="lastudioicon-b-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="lastudioicon-b-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
+
             </div>
           </div>
         </div>

@@ -60,12 +60,12 @@
       .footer-2-col-2 {
         width: 100% !important;
       }
-
       .logo-item {
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+        display: block;
         position: relative;
-        overflow: hidden;
-        height: 403px;
+        height: 0;
+        padding-bottom: 100%;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
         background-color: #fff;
       }
       .logo-item::before {
@@ -81,9 +81,13 @@
         background-color: #191919;
         z-index: 1;
       }
-      .logo-item a {
-        display: block;
-        position: relative;
+      .logo-item .logo-item-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
       }
       .logo-item__image {
         position: relative;
@@ -91,24 +95,35 @@
       }
       .logo-item__image img {
         display: block;
-        transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+
         height: 100%;
         margin: 0 auto;
       }
       .logo-item__shop {
         position: absolute;
-        transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
         left: 0;
         right: 0;
-        top: 240px;
+        top: 60%;
         font-size: 36px;
         text-align: center;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 991px),
+        only screen and (max-width: 767px) {
+        .logo-item__shop {
+          font-size: 30px;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        .logo-item__shop {
+          font-size: 46px;
+        }
       }
       .logo-item__icon {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
         transition: opacity 0.5s cubic-bezier(0.21, 0.75, 0.27, 0.96);
         z-index: 2;
         opacity: 0;
@@ -120,17 +135,24 @@
       .logo-item:hover::before {
         opacity: 0.4;
       }
-      .logo-item:hover .logo-item__image img,
-      .logo-item:hover .logo-item__shop {
+      .logo-item:hover .logo-item-box {
         transform: scale(1.1);
+        -webkit-transform: scale(1.1);
       }
       .logo-item:hover .logo-item__icon {
         opacity: 1;
       }
       .menu-items-list .mega-menu {
-        left: initial;
+        left: 50%;
+        transform: translate(-50%, 20px);
+        -webkit-transform: translate(-50%, 20px);
         right: initial;
         padding: 30px;
+      }
+      .menu-items-list > li:hover > .mega-menu,
+      .menu-items-list > li:hover > .sub-menu {
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
       }
       .menu-items-list .mega-menu .mega-menu-title {
         white-space: nowrap;
@@ -138,11 +160,22 @@
       .instagram-title__description-2 {
         font-size: 16px;
       }
-      .footer-link-3 > *.footer-link__wrapper {
-        width: initial;
+
+      .menu-items-list > li {
+        position: relative !important;
       }
-      .footer-link-3 > *.footer-link__wrapper + .footer-link__wrapper {
-        margin-left: 50px;
+
+      .footer-title-3 {
+        text-align: center;
+      }
+      .footer-link-3__list {
+        text-align: center;
+      }
+      .section-title-4__title {
+        letter-spacing: 0;
+      }
+      .hidden {
+        display: none !important;
       }
     </style>
   </head>
@@ -177,7 +210,6 @@
                         class="mega-menu shop mega-menu-width d-flex flex-wrap"
                       >
                         <div class="mega-menu-col">
-                          <h5 class="mega-menu-title">Shop Pages</h5>
                           <ul class="">
                             <li><a href="#">TikTok Shop</a></li>
                             <li><a href="#">Shopee Shop</a></li>
@@ -211,7 +243,6 @@
                         class="mega-menu mega-menu--wrapper d-flex flex-wrap"
                       >
                         <div class="mega-menu-col">
-                          <h5 class="mega-menu-title">Collection 2023</h5>
                           <ul class="">
                             <li><a href="#">Perfume Balm</a></li>
                           </ul>
@@ -700,28 +731,70 @@
               your fragrance journey with us!
             </p>
           </div>
+          <div class="instagram-title js-scroll ShortFadeInUp hidden">
+            <h2 class="instagram-title__title text-white">@Shopee Shop</h2>
+            <p class="instagram-title__description-2 text-white">
+              Step into the world of PARMAYARD on TikTok Shop! Immerse yourself
+              in captivating scents that define elegance. Don't miss out -
+              follow us for the latest releases and exclusive updates. Elevate
+              your fragrance journey with us!
+            </p>
+          </div>
+          <div class="instagram-title js-scroll ShortFadeInUp hidden">
+            <h2 class="instagram-title__title text-white">@Lazada Shop</h2>
+            <p class="instagram-title__description-2 text-white">
+              Step into the world of PARMAYARD on TikTok Shop! Immerse yourself
+              in captivating scents that define elegance. Don't miss out -
+              follow us for the latest releases and exclusive updates. Elevate
+              your fragrance journey with us!
+            </p>
+          </div>
           <!-- Instagram End -->
 
           <!-- Instagram Start -->
           <div
             class="instagram-3-active navigation-arrows-style-3 js-scroll ShortFadeInUp"
           >
-            <div class="swiper">
+            <div class="swiper logo-shop">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <!-- Instagram image Start -->
-                  <a href="#">
-                    <div class="logo-item">
+                  <a class="logo-item" href="#">
+                    <div class="logo-item-box">
                       <div class="logo-item__image">
                         <img src="./assets/images/logo.svg" alt="Logo" />
                       </div>
                       <div class="logo-item__shop">@TikTok Shop</div>
-                      <div class="logo-item__icon">
-                        <i class="lastudioicon-b-instagram"></i>
-                      </div>
+                    </div>
+                    <div class="logo-item__icon">
+                      <i class="lastudioicon-b-instagram"></i>
                     </div>
                   </a>
-                  <!-- Instagram image End -->
+                </div>
+                <div class="swiper-slide">
+                  <a class="logo-item" href="#">
+                    <div class="logo-item-box">
+                      <div class="logo-item__image">
+                        <img src="./assets/images/logo.svg" alt="Logo" />
+                      </div>
+                      <div class="logo-item__shop">@Shopee Shop</div>
+                    </div>
+                    <div class="logo-item__icon">
+                      <i class="lastudioicon-b-instagram"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="logo-item" href="#">
+                    <div class="logo-item-box">
+                      <div class="logo-item__image">
+                        <img src="./assets/images/logo.svg" alt="Logo" />
+                      </div>
+                      <div class="logo-item__shop">@Lazada Shop</div>
+                    </div>
+                    <div class="logo-item__icon">
+                      <i class="lastudioicon-b-instagram"></i>
+                    </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-button-next">
@@ -764,9 +837,9 @@
                 <h4 class="footer-title-3">Shop Pages</h4>
 
                 <ul class="footer-link-3__list">
-                  <li><a href="#">TikTok Shop</a></li>
-                  <li><a href="#">Shopee Shop</a></li>
-                  <li><a href="#">Lazada Shop</a></li>
+                  <li><span>TikTok Shop</span></li>
+                  <li><span>Shopee Shop</span></li>
+                  <li><span>Lazada Shop</span></li>
                 </ul>
               </div>
               <div class="footer-link__wrapper">
@@ -777,10 +850,10 @@
                     <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
                   </li>
                   <li>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <span>info@example.com</span>
                   </li>
                   <li>
-                    <a href="">(626)997-4298</a>
+                    <span>(626)997-4298</span>
                   </li>
                 </ul>
               </div>

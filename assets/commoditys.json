@@ -1,6 +1,8 @@
 [
     {
         "id": "pb1001",
+        "sku": "PY-PB1001",
+        "categories": "Perfume Balm",
         "title": "PERFUME BALM #FOREST THOUGHT", 
         "subtitle": "Daisy | Joyful Clary Sage | Water | Cyperus | Musk | Woody Notes | Amber",
         "image": "assets/images/perfume-balm/commodity/green.png",
@@ -11,12 +13,14 @@
             "assets/images/perfume-balm/commodity/green2.png"
         ],
         "attr": [
-            { "k": "Color","v": "green" }
+            { "k": "Color","v": "Green" }
         ],
         "desc": "<p>PARMAYARD #FOREST THOUGHT</p><p>Top Notes: Daisy, Joyful Clary Sage, Water<br>Middle Notes: Cyperus<br>Base/After Notes: Musk, Woody Notes, Amber</p><p>The top notes of PARMAYARD present a rich, sweet chamomile akin to honey, intertwined with the bittersweet herbal essence of joyful clary sage. It offers a subtly bitter yet pleasantly sweet aftertaste, spreading an intricate and harmonious aroma that captivates ceaselessly.</p><p>In the middle notes, you'll detect the refreshing scent of cyperus, laced with a hint of raindrops. It's like the deep forest after a heavy rain, where the fresh aroma of cyperus is enhanced by the moisture.</p><p>The base notes are a graceful blend of soft woody scents and warm musk, wrapped around a cool amber. It provides a special comfort to a weary heart, evoking a sense of solace.</p>"
     },
     {
         "id": "pb2001",
+        "sku": "PY-PB2001",
+        "categories": "Perfume Balm",
         "title": "PERFUME BALM #EASY SUNDAY", 
         "subtitle": "Citrusy Lemon | Lime | Cardamom | Cedar | Cucumber | Sandalwood | Amyris Blossom",
         "image": "assets/images/perfume-balm/commodity/yellow.png",
@@ -27,12 +31,14 @@
             "assets/images/perfume-balm/commodity/yellow2.png"
         ],
         "attr": [
-            { "k": "Color","v": "yellow" }
+            { "k": "Color","v": "Yellow" }
         ],
         "desc": "<p>PARMAYARD #EASY SUNDAY</p><p>Top Notes: Citrusy Lemon, Lime, Cardamom<br>Middle Notes: Cedar, Cucumber<br>Base/After Notes: Sandalwood, Amyris Blossom</p><p>In the opening notes of PARMAYARD, the scent of citrusy lemon thrives under the Mediterranean sun, exuding a refreshing coolness. Blended with the subtle bitterness of lime and cardamom, it evokes images of green mandarins ripening under the dazzling sunlight.</p><p>The middle notes introduce a burst of fresh cucumber that captures your attention momentarily before fading away. Then, a deep and warm cedar aroma emerges, reminiscent of a comforting, warm cup on a leisurely weekend.</p><p>In the base notes, a gentle echo of sandalwood softly lingers, while the Amyris blossom flourishes, sketching out warm memories of sunlit summer days.</p>"
     },
     {
         "id": "pb3001",
+        "sku": "PY-PB3001",
+        "categories": "Perfume Balm",
         "title": "PERFUME BALM #BLANCHE", 
         "subtitle": "Nutmeg | Tea | Aldehyde | Pepper | Iris | Guaiac Wood | Musk | Vetiver | Cedar",
         "image": "assets/images/perfume-balm/commodity/white.png",
@@ -43,7 +49,7 @@
             "assets/images/perfume-balm/commodity/white2.png"
         ],
         "attr": [
-            { "k": "Color","v": "white" }
+            { "k": "Color","v": "White" }
         ],
         "desc": "<p>PARMAYARD #BLANCHE</p><p>Top Notes: Nutmeg, Tea, Aldehyde<br>Middle Notes: Pepper, Iris, Guaiac Wood<br>Base/After Notes: Musk, Vetiver, Cedar</p><p>The top notes of PARMAYARD feature nutmeg and aldehydes, creating a fermented tea leaf aroma that transcends the monotony of plain tea, adding layers and depth to the fragrance.</p><p>The middle notes soon soften, exuding the elegance of guaiac wood and pepper, with a subtle hint of moisture. This evokes images of a bamboo forest after the rain, where the fragrance of iris is elusive yet simply captivating.</p><p>The base is filled with the warmth of transparent amber and musk, constantly invigorating and uplifting. The scent is fresh, clear, uncomplicated, and pure, offering a simple yet profound olfactory experience.</p>"
     }

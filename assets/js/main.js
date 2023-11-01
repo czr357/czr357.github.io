@@ -26,10 +26,6 @@ const headerSticky = (selector) => {
         const headerLogo = header.querySelector(".change-logo img")
         const headerMenu = header.querySelector(".menu-items-list")
 
-        console.log(headerMenu)
-
-
-
         window.addEventListener("scroll", () => {
             const currentScroll = window.pageYOffset
 
@@ -637,7 +633,6 @@ var swiper = new Swiper(".instagram-3-active .swiper", {
         nextEl: ".instagram-3-active .swiper-button-next",
         prevEl: ".instagram-3-active .swiper-button-prev",
     },
-
     // Cover flow Effect
     coverflowEffect: {
         rotate: 0,
@@ -645,6 +640,19 @@ var swiper = new Swiper(".instagram-3-active .swiper", {
         depth: 100,
         modifier: 1,
         slideShadows: true,
+    },
+    on: {
+        slideChangeTransitionEnd: function () {
+            var $curSwiper = this.$el
+            if ($curSwiper.hasClass('logo-shop')) {
+                $curSwiper.parents('.instagram-section-3')
+                    .find('.instagram-title')
+                    .addClass('hidden')
+                    .eq(this.activeIndex)
+                    .removeClass('hidden')
+            }
+
+        },
     },
 })
 
