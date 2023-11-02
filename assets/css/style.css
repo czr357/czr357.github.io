@@ -2741,9 +2741,6 @@ hr {
   text-align: right;
   padding-right: 40px;
 }
-.footer-link-3>*.contact{
-  
-}
 .footer-link-3>*.contact .footer-link-3__list{
   max-width: 420px;
 }
@@ -2753,8 +2750,18 @@ hr {
   }
 }
 @media only screen and (max-width: 575px) {
-  .footer-link-3 > *:first-child {
+  .footer-link-3 > * {
     width: 100%;
+  }
+  .footer-link-3>*.shop-pages {
+    text-align: center;
+    padding-right: 0;
+  }
+  .footer-link-3>*.contact{
+    text-align: center;
+  }
+  .footer-link-3>*.contact .footer-link-3__list {
+    max-width: initial;
   }
 }
 .footer-link-3__list {
