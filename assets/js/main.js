@@ -25,6 +25,7 @@ const headerSticky = (selector) => {
     if (header) {
         const headerLogo = header.querySelector(".change-logo img")
         const headerMenu = header.querySelector(".menu-items-list")
+        const isOnlyBlack = header.className.indexOf('black') >= 0
 
         window.addEventListener("scroll", () => {
             const currentScroll = window.pageYOffset
@@ -34,7 +35,7 @@ const headerSticky = (selector) => {
                 headerLogo && (headerLogo.src = "./assets/images/logo.svg")
             } else {
                 header.classList.remove("is-sticky")
-                headerLogo && (headerLogo.src = "./assets/images/logo-white.svg")
+                headerLogo && !isOnlyBlack && (headerLogo.src = "./assets/images/logo-white.svg")
             }
         })
     }
