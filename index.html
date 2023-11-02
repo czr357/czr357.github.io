@@ -177,6 +177,31 @@
       .hidden {
         display: none !important;
       }
+
+      .home-5-slider-content-style-1 {
+        position: relative;
+      }
+
+      .home-5-slider-content-style-1__sub-title {
+        position: absolute;
+        left: 50%;
+        bottom: 110%;
+        transform: translate(-50%, 0);
+      }
+      .home-5-slider-content-style-1__title {
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+      .home-5-slider-content-style-1__btn {
+        position: absolute;
+        left: 50%;
+        top: 120%;
+        transform: translate(-50%, 0);
+        margin-top: 0;
+      }
+      .home-5-slider-content-style-1__btns {
+        margin-top: 0;
+      }
     </style>
   </head>
 
@@ -732,19 +757,15 @@
           <div class="instagram-title js-scroll ShortFadeInUp hidden">
             <h2 class="instagram-title__title text-white">@Shopee Shop</h2>
             <p class="instagram-title__description-2 text-white">
-              Step into the world of PARMAYARD on TikTok Shop! Immerse yourself
-              in captivating scents that define elegance. Don't miss out -
-              follow us for the latest releases and exclusive updates. Elevate
-              your fragrance journey with us!
+              Find PARMAYARD on Shopee. Dive into our world of elegant aromas.
+              Don’t miss our latest updates. Follow for a sensory adventure.
             </p>
           </div>
           <div class="instagram-title js-scroll ShortFadeInUp hidden">
             <h2 class="instagram-title__title text-white">@Lazada Shop</h2>
             <p class="instagram-title__description-2 text-white">
-              Step into the world of PARMAYARD on TikTok Shop! Immerse yourself
-              in captivating scents that define elegance. Don't miss out -
-              follow us for the latest releases and exclusive updates. Elevate
-              your fragrance journey with us!
+              Explore PARMAYARD on Lazada. Unique scents await! Stay tuned for
+              new releases. Follow for an exclusive fragrance journey.
             </p>
           </div>
           <!-- Instagram End -->
@@ -999,21 +1020,13 @@
             <!-- Slider Content Start -->
             <div class="home-5-slider-content-style-1 text-center">
                 <h4 class="home-5-slider-content-style-1__sub-title" style="{{= ($value.color ? 'color:' + $value.color + ";" : '')}}">
-                PERFUME BALM
+                  PERFUME BALM
                 </h4>
                 <h2 class="home-5-slider-content-style-1__title" style="{{= ($value.color ? 'color:' + $value.color + ";" : '')}}">
-                {{= $value.title}}
+                  {{= $value.title}}
                 </h2>
-                <ul
-                class="home-5-slider-content-style-1__btns justify-content-center"
-                >
-                <li class="button-01">
-                    <a
-                    class="home-5-slider-content-style-1__btn"
-                    href="{{= $value.link}}"
-                    >Shop now</a
-                    >
-                </li>
+                <ul class="home-5-slider-content-style-1__btns justify-content-center">
+                  <a class="home-5-slider-content-style-1__btn" href="{{= $value.link}}">Shop now</a>
                 </ul>
             </div>
             <!-- Slider Content End -->
