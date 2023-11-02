@@ -49,6 +49,7 @@
       .single-product__info--tags {
         color: #171717;
         font-size: 12px;
+        font-weight: 200;
         margin-bottom: 10px;
       }
       .single-product__info--price {
@@ -157,23 +158,11 @@
       .menu-items-list .mega-menu .mega-menu-title {
         white-space: nowrap;
       }
-      .instagram-title__description-2 {
-        font-size: 16px;
-      }
 
       .menu-items-list > li {
         position: relative !important;
       }
 
-      .footer-title-3 {
-        text-align: center;
-      }
-      .footer-link-3__list {
-        text-align: center;
-      }
-      .section-title-4__title {
-        letter-spacing: 0;
-      }
       .hidden {
         display: none !important;
       }
@@ -187,6 +176,7 @@
         left: 50%;
         bottom: 110%;
         transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
       }
       .home-5-slider-content-style-1__title {
         margin-top: 0;
@@ -195,12 +185,20 @@
       .home-5-slider-content-style-1__btn {
         position: absolute;
         left: 50%;
-        top: 120%;
+        top: 130%;
         transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
         margin-top: 0;
       }
       .home-5-slider-content-style-1__btns {
         margin-top: 0;
+      }
+      .header__main--logo-2 {
+        margin: 0;
+      }
+      .menu-items-list > li > a {
+        font-size: 16px;
+        font-weight: 500;
       }
     </style>
   </head>
@@ -790,7 +788,11 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="logo-item" href="#">
+                  <a
+                    class="logo-item"
+                    style="background-color: rgba(123, 186, 55)"
+                    href="#"
+                  >
                     <div class="logo-item-box">
                       <div class="logo-item__image">
                         <img src="./assets/images/logo.svg" alt="Logo" />
@@ -803,7 +805,11 @@
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class="logo-item" href="#">
+                  <a
+                    class="logo-item"
+                    style="background-color: rgba(255, 192, 0)"
+                    href="#"
+                  >
                     <div class="logo-item-box">
                       <div class="logo-item__image">
                         <img src="./assets/images/logo.svg" alt="Logo" />
@@ -852,7 +858,7 @@
           <div class="footer-2-col-2">
             <!-- Footer Link Start -->
             <div class="footer-link-3 justify-content-center">
-              <div class="footer-link__wrapper">
+              <div class="footer-link__wrapper shop-pages">
                 <h4 class="footer-title-3">Shop Pages</h4>
                 <ul class="footer-link-3__list">
                   <li><span>TikTok Shop</span></li>
@@ -860,18 +866,21 @@
                   <li><span>Lazada Shop</span></li>
                 </ul>
               </div>
-              <div class="footer-link__wrapper">
+              <div class="footer-link__wrapper contact">
                 <h4 class="footer-title-3">Contact</h4>
 
                 <ul class="footer-link-3__list">
                   <li>
-                    <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+                    <span
+                      ><em>Adress:</em> blossom building B , 7 floor No.258/14
+                      Soi Chareanrat 3 Thungwatdon Sathorn bangkok 10120</span
+                    >
                   </li>
                   <li>
-                    <span>info@example.com</span>
+                    <span><em>Email:</em> Terrapafe.teppap@gmail.com</span>
                   </li>
                   <li>
-                    <span>(626)997-4298</span>
+                    <span><em>Phone:</em> 082-282-6647</span>
                   </li>
                 </ul>
               </div>
@@ -1019,7 +1028,7 @@
             <div class="container-fluid custom-container">
             <!-- Slider Content Start -->
             <div class="home-5-slider-content-style-1 text-center">
-                <h4 class="home-5-slider-content-style-1__sub-title" style="{{= ($value.color ? 'color:' + $value.color + ";" : '')}}">
+                <h4 class="home-5-slider-content-style-1__sub-title" >
                   PERFUME BALM
                 </h4>
                 <h2 class="home-5-slider-content-style-1__title" style="{{= ($value.color ? 'color:' + $value.color + ";" : '')}}">
@@ -1075,12 +1084,6 @@
                   <div class="product-single-content__price-stock">
                     <div class="product-single-content__price">
                       <ins>{{= price}}</ins>
-                    </div>
-                    <div class="product-single-content__stock">
-                      <span class="stock-icon">
-                        <i class="dlicon ui-1_check-circle-08"></i>
-                      </span>
-                      <span class="stock-text">97 in stock</span>
                     </div>
                   </div>
                   <div class="product-single-content__short-description">

@@ -642,7 +642,7 @@ var swiper = new Swiper(".instagram-3-active .swiper", {
         slideShadows: true,
     },
     on: {
-        slideChangeTransitionEnd: function () {
+        slideChangeTransitionStart: function () {
             var $curSwiper = this.$el
             if ($curSwiper.hasClass('logo-shop')) {
                 $curSwiper.parents('.instagram-section-3')

@@ -82,11 +82,34 @@
 
 @font-face {
   font-family: "noto sans";
+  src: url("../fonts/NotoSans-Thin.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "noto sans";
   src: url("../fonts/NotoSans-Regular.ttf");
   font-weight: normal;
-  font-style: normal;
 }
-
+@font-face {
+  font-family: "noto sans";
+  src: url("../fonts/NotoSans-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "noto sans";
+  src: url("../fonts/NotoSans-ExtraBold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "work sans";
+  src: url("../fonts/WorkSans-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "work sans";
+  src: url("../fonts//WorkSans-ExtraBold.ttf");
+  font-weight: 800;
+}
 /* Common Style */
 *,
 *::after,
@@ -368,11 +391,11 @@ hr {
   gap: 20px;
 }
 .section-title-4__title {
-  font-size: 52px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 500;
   line-height: 1;
   color: #171717;
-  letter-spacing: 0.15em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -391,11 +414,12 @@ hr {
   }
 }
 .section-title-4 p {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 200;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .section-title-4 p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -2383,10 +2407,8 @@ hr {
 
 .footer-title-3 {
   color: #171717;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.22em;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .footer-info {
@@ -2709,8 +2731,21 @@ hr {
   }
 }
 .footer-link-3 > * {
-  width: 33.33%;
+  width: 50%;
   margin-top: 40px;
+  font-size: 14px;
+  color: #000000;
+  box-sizing: border-box;
+}
+.footer-link-3>*.shop-pages{
+  text-align: right;
+  padding-right: 40px;
+}
+.footer-link-3>*.contact{
+  
+}
+.footer-link-3>*.contact .footer-link-3__list{
+  max-width: 420px;
 }
 @media only screen and (max-width: 767px) {
   .footer-link-3 > * {
@@ -2736,15 +2771,19 @@ hr {
 }
 .footer-link-3__list li span, .footer-link-3__list li a {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.6;
-  color: #717171;
+  color: #000000;
   transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .footer-link-3__list li span, .footer-link-3__list li a {
     font-size: 16px;
   }
+}
+.footer-link-3__list li span em{
+  font-style: normal;
+  font-weight: normal;
 }
 .footer-link-3__list li:hover span, .footer-link-3__list li:hover a {
   color: #d68d67;
@@ -4522,11 +4561,14 @@ hr {
 }
 
 .home-5-slider-content-style-1__sub-title {
-  font-size: 46px;
-  font-weight: 400;
+  font-size: 34px;
+  font-weight: 800;
   line-height: 1;
   color: #ffffff;
+  font-family: "work sans";
+  font-style: italic;
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .home-5-slider-content-style-1__sub-title {
     font-size: 34px;
@@ -4548,8 +4590,8 @@ hr {
   }
 }
 .home-5-slider-content-style-1__title {
-  font-size: 150px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 800;
   font-family: "noto sans";
   color: #ffffff;
   line-height: 1;
@@ -4557,17 +4599,17 @@ hr {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .home-5-slider-content-style-1__title {
-    font-size: 110px;
+    font-size: 64px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-5-slider-content-style-1__title {
-    font-size: 90px;
+    font-size: 64px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-5-slider-content-style-1__title {
-    font-size: 70px;
+    font-size: 64px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -4589,7 +4631,7 @@ hr {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-5-slider-content-style-1__btns {
-    margin-top: 27px;
+    margin-top: 22px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
@@ -4604,11 +4646,11 @@ hr {
 .home-5-slider-content-style-1__btn {
   background-color: #ffffff;
   color: #494949;
-  width: 180px;
+  width: 185px;
   text-align: center;
-  line-height: 50px;
-  font-weight: 400;
-  font-size: 20px;
+  line-height: 55px;
+  font-weight: 500;
+  font-size: 16px;
   transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
   border: 2px solid #ffffff;
 }
@@ -7172,14 +7214,14 @@ hr {
   }
 }
 .single-product__info--title {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 10px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .single-product__info--title {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 .single-product__info--title a {
@@ -8955,15 +8997,18 @@ hr {
   }
 }
 .instagram-title__title {
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1;
   color: #171717;
   margin-bottom: 20px;
 }
+.instagram-title__title{
+  font-weight: 500;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .instagram-title__title {
-    font-size: 30px;
+    font-size: 24px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8974,6 +9019,24 @@ hr {
 @media only screen and (max-width: 767px) {
   .instagram-title__title {
     font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1599px),
+only screen and (min-width: 992px) and (max-width: 1199px) {
+  .instagram-title__title {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .instagram-title__title {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .instagram-title__title {
+    font-size: 14px;
   }
 }
 .instagram-title__description {
@@ -8996,6 +9059,9 @@ hr {
   color: #707070;
   font-size: 14px;
   line-height: 1.6;
+}
+.instagram-title__description-2{
+  font-weight: 200;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .instagram-title__description-2 {
@@ -15750,6 +15816,7 @@ hr {
 }
 .product-single-content__short-description {
   margin-bottom: 60px;
+  font-weight: 200;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (max-width: 767px) {
   .product-single-content__short-description {
@@ -15907,6 +15974,7 @@ hr {
 }
 .product-single-content__meta {
   margin-bottom: 60px;
+  font-weight: 200;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (max-width: 767px) {
   .product-single-content__meta {
@@ -16233,8 +16301,19 @@ hr {
   color: #171717;
   margin-bottom: 16px;
 }
+.product-single-tab-description-item h2{
+  font-size: 16px;
+  font-weight: 500;
+}
+.product-single-tab-description-item span {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 16px;
+}
 .product-single-tab-description-item p {
   margin-top: 16px;
+  font-weight: 200;
 }
 .product-single-tab-description-item p:first-child {
   margin-top: 0;
@@ -16287,7 +16366,9 @@ hr {
   font-size: 16px;
   color: #494949;
 }
-
+.product-single-table .table > :not(caption) > * > * {
+  font-weight: 200;
+}
 .product-single-review > * {
   margin-top: 80px;
 }
