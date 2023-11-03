@@ -211,6 +211,12 @@ var swiper = new Swiper(".slider-active .swiper", {
         nextEl: ".slider-active .swiper-button-next",
         prevEl: ".slider-active .swiper-button-prev",
     },
+    on: {
+        init: function (swiper) {
+            console.log('init', swiper)
+            $(".home-5-slider-navigation").removeClass("hidden");
+        }
+    }
 })
 
 /*--
