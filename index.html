@@ -61,12 +61,18 @@
       .footer-2-col-2 {
         width: 100% !important;
       }
+      .instagram-title__title {
+        font-size: 14px;
+      }
+      .instagram-title__description-2 {
+        font-size: 12px;
+      }
       .logo-item {
         display: block;
         position: relative;
         height: 0;
         padding-bottom: 100%;
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+        /* box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15); */
         background-color: #fff;
       }
       .logo-item::before {
@@ -105,19 +111,8 @@
         left: 0;
         right: 0;
         top: 60%;
-        font-size: 36px;
+        font-size: 14px;
         text-align: center;
-      }
-      @media only screen and (min-width: 768px) and (max-width: 991px),
-        only screen and (max-width: 767px) {
-        .logo-item__shop {
-          font-size: 30px;
-        }
-      }
-      @media only screen and (max-width: 767px) {
-        .logo-item__shop {
-          font-size: 46px;
-        }
       }
       .logo-item__icon {
         position: absolute;
@@ -199,6 +194,14 @@
       .menu-items-list > li > a {
         font-size: 16px;
         font-weight: 500;
+      }
+      .instagram-3-active {
+        width: 330px;
+      }
+      @media only screen and (max-width: 767px) {
+        .instagram-3-active {
+          margin: 0 auto;
+        }
       }
     </style>
   </head>
@@ -739,7 +742,7 @@
       <!-- Instagram Start -->
       <div class="instagram-section-3 section-padding">
         <div
-          class="container-fluid instagram-container align-items-center justify-content-between"
+          class="container-fluid instagram-container align-items-center justify-content-center"
         >
           <!-- Instagram Start -->
           <div class="instagram-title js-scroll ShortFadeInUp">
@@ -860,9 +863,11 @@
               <div class="footer-link__wrapper shop-pages">
                 <h4 class="footer-title-3">Shop Pages</h4>
                 <ul class="footer-link-3__list">
-                  <li><span>TikTok Shop</span></li>
+                  <li>
+                    <span style="height: 28px">TikTok Shop</span>
+                  </li>
                   <li><span>Shopee Shop</span></li>
-                  <li><span>Lazada Shop</span></li>
+                  <li><span style="margin-top: 21px">Lazada Shop</span></li>
                 </ul>
               </div>
               <div class="footer-link__wrapper contact">
@@ -879,7 +884,9 @@
                     <span><em>Email:</em> Terrapafe.teppap@gmail.com</span>
                   </li>
                   <li>
-                    <span><em>Phone:</em> 082-282-6647</span>
+                    <span style="margin-top: 21px"
+                      ><em>Phone:</em> 082-282-6647</span
+                    >
                   </li>
                 </ul>
               </div>
