@@ -11,6 +11,44 @@ $.ajax({
     success: function (data) { // 成功回调函数
         // console.log(data); // 在控制台输出读取到的数据
         $("#tmpl2").tmpl({ dataList: data }).appendTo(".slider-section .swiper-wrapper")
+
+        /*--
+            Main Slider
+        -----------------------------------*/
+        var swiper = new Swiper(".slider-active .swiper", {
+            parallax: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: ["-20%", 0, -1],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+            loop: true,
+            speed: 1200,
+
+            // If we need pagination
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: ".slider-active .swiper-button-next",
+                prevEl: ".slider-active .swiper-button-prev",
+            },
+            on: {
+                init: function (swiper) {
+                    // console.log('init', swiper)
+                    $(".home-5-slider-navigation").removeClass("hidden");
+                }
+            }
+        })
     },
     error: function (xhr, status, error) { // 失败回调函数
         console.error(xhr, status, error);
