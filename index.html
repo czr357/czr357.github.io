@@ -717,7 +717,7 @@
 
     <main>
       <!-- Slider Start -->
-      <div class="slider-section home-5-slider-navigation slider-active">
+      <div class="slider-section home-5-slider-navigation slider-active hidden">
         <div class="swiper">
           <div class="swiper-wrapper"></div>
 
@@ -1177,5 +1177,10 @@
     <!-- Activation JS -->
     <script src="assets/js/logic/home.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      window.onload = function () {
+        $(".home-5-slider-navigation").removeClass("hidden");
+      };
+    </script>
   </body>
 </html>
