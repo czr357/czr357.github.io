@@ -35,7 +35,7 @@ $.ajax({
             $('.product-single-section .container-fluid').html($("#cmd_detail").tmpl(detail))
             $('.product-single-tab-description-item').html(detail.desc)
             $('.table-responsive').html($("#cmd_attr").tmpl(detail))
-            $('.product-single-tab-image__image').html($('<img>').attr('src', detail.image).attr('alt', 'Product'))
+            $('.product-single-tab-image__image').html($('<img>').attr('src', detail.descImg).attr('alt', 'Product'))
         }
 
         const relatedList = data.filter(function (item) {

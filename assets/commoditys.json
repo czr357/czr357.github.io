@@ -18,7 +18,8 @@
         "attr": [
             { "k": "Color","v": "Green" }
         ],
-        "desc": "<h2>PARMAYARD #FOREST THOUGHT</h2><span>Top Notes: Daisy, Joyful Clary Sage, Water<br>Middle Notes: Cyperus<br>Base/After Notes: Musk, Woody Notes, Amber</span><p>The herbal scent of chamomile and bitter clary sage, as thick and sweet as honey, creates an addictive scent in a subtle harmony.</p><p>It presents a special little comfort to your weary heart by wrapping the water sedge feeling that may feel cold with elegant and soft wood and warm musk.</p>"
+        "desc": "<h2>PARMAYARD #FOREST THOUGHT</h2><span>Top Notes: Daisy, Joyful Clary Sage, Water<br>Middle Notes: Cyperus<br>Base/After Notes: Musk, Woody Notes, Amber</span><p>The herbal scent of chamomile and bitter clary sage, as thick and sweet as honey, creates an addictive scent in a subtle harmony.</p><p>It presents a special little comfort to your weary heart by wrapping the water sedge feeling that may feel cold with elegant and soft wood and warm musk.</p>",
+        "descImg": "assets/images/perfume-balm/commodity/Slide20.jpg"
     },
     {
         "id": "pb2001",
@@ -39,7 +40,9 @@
         "attr": [
             { "k": "Color","v": "Yellow" }
         ],
-        "desc": "<h2>PARMAYARD #EASE SUNDAY</h2><span>Top Notes: Citrusy Lemon, Lime, Cardamom<br>Middle Notes: Cedar, Cucumber<br>Base/After Notes: Sandalwood, Amyris Blossom</span><p>The fresh and bitter scent of lime cardamom is added to the refreshing scent of bergamot, grown under the green energy of the Mediterranean, reminding you of green tangerines ripening slowly under the warm sunlight.</p><p>Subsequent to that, the soft curved reverberation of sandalwood gently lingers around, drawing warm memories of a sunny summer day.</p>"    },
+        "desc": "<h2>PARMAYARD #EASE SUNDAY</h2><span>Top Notes: Citrusy Lemon, Lime, Cardamom<br>Middle Notes: Cedar, Cucumber<br>Base/After Notes: Sandalwood, Amyris Blossom</span><p>The fresh and bitter scent of lime cardamom is added to the refreshing scent of bergamot, grown under the green energy of the Mediterranean, reminding you of green tangerines ripening slowly under the warm sunlight.</p><p>Subsequent to that, the soft curved reverberation of sandalwood gently lingers around, drawing warm memories of a sunny summer day.</p>",
+        "descImg": "assets/images/perfume-balm/commodity/Slide19.jpg"
+    },
     {
         "id": "pb3001",
         "sku": "PY-PB3001",
@@ -59,6 +62,7 @@
         "attr": [
             { "k": "Color","v": "White" }
         ],
-        "desc": "<h2>PARMAYARD #BLANCHE</h2><span>Top Notes: Nutmeg, Tea, Aldehyde<br>Middle Notes: Pepper, Iris, Guaiac Wood<br>Base/After Notes: Musk, Vetiver, Cedar</span><p>Starts with a refreshing yet understated sweetness as drinking the Tea,leaving a deep and subtle lingering aftertaste. The sweet fruity aroma of bitter darjeeling tea are richly and harmoniously combined to create a feast of elegant fragrance dancing in a teacup. Creamy musk and sandalwood from the tip of the nose make the soft reverberation last for a long time.</p>"    
+        "desc": "<h2>PARMAYARD #BLANCHE</h2><span>Top Notes: Nutmeg, Tea, Aldehyde<br>Middle Notes: Pepper, Iris, Guaiac Wood<br>Base/After Notes: Musk, Vetiver, Cedar</span><p>Starts with a refreshing yet understated sweetness as drinking the Tea,leaving a deep and subtle lingering aftertaste. The sweet fruity aroma of bitter darjeeling tea are richly and harmoniously combined to create a feast of elegant fragrance dancing in a teacup. Creamy musk and sandalwood from the tip of the nose make the soft reverberation last for a long time.</p>",
+        "descImg": "assets/images/perfume-balm/commodity/Slide21.jpg"  
     }
 ]
