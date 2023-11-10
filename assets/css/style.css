@@ -4612,7 +4612,7 @@ hr {
   }
 }
 .home-5-slider-content-style-1__title {
-  font-size: 64px;
+  font-size: 96px;
   font-weight: 800;
   font-family: "noto sans";
   color: #ffffff;
@@ -4621,12 +4621,12 @@ hr {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .home-5-slider-content-style-1__title {
-    font-size: 64px;
+    font-size: 96px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-5-slider-content-style-1__title {
-    font-size: 64px;
+    font-size: 96px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
