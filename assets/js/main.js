@@ -1314,3 +1314,8 @@ const AutoPopup = (selector) => {
 }
 
 //AutoPopup(".popup-modal")
+
+function tolink(e) {
+    const link = $(e).attr('link')
+    window.location.href = link
+}
